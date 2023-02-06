@@ -1,6 +1,5 @@
 export default function decorate(block) {
-  [...block.children].forEach((row, i) => {
-    console.log(row);
+  [...block].forEach((row, i) => {
     console.log(block);
     console.log(...block.children);
     const classes = ['question', 'answer'];
