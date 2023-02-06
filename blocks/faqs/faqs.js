@@ -2,7 +2,7 @@ export default function decorate(block) {
   [...block.children].forEach((row, i) => {
     const classes = ['question', 'answer'];
     classes.forEach((c, j) => {
-      const section = row[j];
+      const section = row;
       if (section) section.classList.add(`faq-${c}`);
     });
   });
