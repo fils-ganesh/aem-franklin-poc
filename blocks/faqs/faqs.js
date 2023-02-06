@@ -6,3 +6,4 @@ export default function decorate(block) {
       if (section) section.classList.add(`faq-${c}`);
     });
   });
+}
