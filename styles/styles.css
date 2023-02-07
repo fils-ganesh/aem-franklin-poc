@@ -254,3 +254,12 @@ body {
   font-size: 0.75em;
 }
 
+.section.columns-container .columns-2-cols>div>div:first-child {
+  width: 40%;
+}
+
+.section.columns-container .columns-2-cols>div>div:last-child {
+  width: 60%;
+}
+
+
