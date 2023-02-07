@@ -3,9 +3,7 @@ export default function decorate(block) {
   block.classList.add(`columns-${cols.length}-cols`);
   
   [...block.children].forEach((row, i) => {
-    if (row.children) {
-      row.children.classList.add(`col-content-${i}`);
-    }
+    row.children[i].classList.add(`col-content-${i}`);
   });
 
 }
