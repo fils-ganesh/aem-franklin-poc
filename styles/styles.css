@@ -254,6 +254,10 @@ body {
   font-size: 0.75em;
 }
 
+.section.columns-container .columns-2-cols>div {
+  align-items: flex-start;
+}
+
 .section.columns-container .columns-2-cols>div>div:first-child {
   width: 40%;
 }
@@ -262,4 +266,33 @@ body {
   width: 60%;
 }
 
+.section.columns-container .columns-2-cols>div>div:last-child h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  color: #1F3142;
+  font-size: 2.5em;
+  line-height: 1.1;
+  margin: 0 0 0.5em;
+}
 
+.section.columns-container .columns-2-cols > div > div:last-child .button-container a {
+  margin: 0;
+  display: inline-block;
+  border: 3px solid #61114f;
+  border-radius: 0.3rem;
+  background-color: transparent;
+  color: #61114f;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1;
+  padding: 12.5px 35px;
+  text-align: center;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+
+.section.columns-container .columns-2-cols > div > div:last-child .button-container a:hover {
+  background-color: 61114f;
+  color: #fff;
+}
