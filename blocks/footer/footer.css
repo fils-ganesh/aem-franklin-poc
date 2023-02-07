@@ -3,17 +3,11 @@ footer.footer-wrapper {
   box-shadow: 0 0 6px #9a9a9a;
 }
 
-footer.footer-wrapper>div {
+footer.footer-wrapper .footer > div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-footer.footer-wrapper .footer {
-  width: 1170px;
-  margin: 0 auto;
-  padding: 1rem 0;
 }
 
 footer.footer-wrapper .footer ul {
