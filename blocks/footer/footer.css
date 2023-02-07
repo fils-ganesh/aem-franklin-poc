@@ -36,24 +36,23 @@ footer.footer-wrapper .footer .footer-content picture img {
 }
 
 footer.footer-wrapper .footer>div {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 footer.footer-wrapper .footer ul {
   margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  padding: 15px 0 0;
   display: flex;
   list-style: none;
+}
+
+footer.footer-wrapper .footer ul li {
+  padding-right: 40px;
+}
+
+footer.footer-wrapper .footer ul li:last-child {
+  padding: 0;
 }
 
 footer.footer-wrapper .footer ul li a {
