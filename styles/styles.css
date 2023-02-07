@@ -301,3 +301,8 @@ body {
   color: #fff;
 }
 
+sup {
+  top: -0.5em;
+  font-size: 60%;
+}
+
