@@ -244,4 +244,13 @@ body {
   font-size: 17px;
   line-height: 1.4;
 }
+/* References section */
+section.references-container .references-wrapper {
+  font-size: 0.75em;
+  padding: 3.5rem 0;
+}
+
+section.references-container .references-wrapper p {
+  font-size: 0.75em;
+}
 
