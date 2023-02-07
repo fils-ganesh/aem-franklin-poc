@@ -1,5 +1,6 @@
 footer.footer-wrapper {
-  padding: 1rem 0;
+  padding: 10px 0;
+  margin-bottom: 28px;
   background-color: #fff;
   box-shadow: 0 0 6px #9a9a9a;
 }
