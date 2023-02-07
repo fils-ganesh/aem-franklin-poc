@@ -12,12 +12,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&display=swap');
 
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 17px;
-  line-height: normal;
-}
-
  :root {
   /* colors */
   --link-color: #035fe6;
@@ -243,3 +237,10 @@ main .section[data-section-status='initialized'] {
 main .section.highlight {
   background-color: var(--highlight-background-color);
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  line-height: normal;
+}
+
