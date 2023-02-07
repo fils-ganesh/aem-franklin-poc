@@ -1,4 +1,7 @@
-import { readBlockConfig, decorateIcons } from '../../scripts/lib-franklin.js';
+import {
+  readBlockConfig,
+  decorateIcons
+} from '../../scripts/lib-franklin.js';
 
 /**
  * loads and decorates the footer
@@ -16,4 +19,12 @@ export default async function decorate(block) {
   footer.innerHTML = html;
   await decorateIcons(footer);
   block.append(footer);
+
+  [...block.children].forEach((row, i) => {
+    const classes = ['navigation', 'content'];
+    classes.forEach((classTxt, index) => {
+      const section = row.children[index];
+      if (section) section.classList.add(`footer-${classTxt}`);
+    });
+  });
 }
