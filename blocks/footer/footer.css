@@ -21,11 +21,14 @@ footer.footer-wrapper .footer .footer-content p {
 
 footer.footer-wrapper .footer .footer-content p:first-child {
   margin: 0;
+  padding-bottom: .5em;
 }
 
 footer.footer-wrapper .footer .footer-content picture img {
   max-width: 90px;
   height: auto;
+  display: block;
+  margin-left: auto;
 }
 
 footer.footer-wrapper .footer>div {
@@ -50,7 +53,7 @@ footer.footer-wrapper .footer ul {
 }
 
 footer.footer-wrapper .footer ul li a {
-  color: #1F3142;
+  color: #1f3142;
   font-weight: 700;
   text-decoration: none;
   font-size: 0.9em;
