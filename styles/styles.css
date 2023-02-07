@@ -275,7 +275,11 @@ body {
   margin: 0 0 0.5em;
 }
 
-.section.columns-container .columns-2-cols > div > div:last-child .button-container a {
+.section.columns-container .columns-2-cols>div>div:last-child .button-container {
+  margin: 0;
+}
+
+.section.columns-container .columns-2-cols>div>div:last-child .button-container a {
   margin: 0;
   display: inline-block;
   border: 3px solid #61114f;
@@ -292,7 +296,8 @@ body {
   transition: background-color 0.25s ease;
 }
 
-.section.columns-container .columns-2-cols > div > div:last-child .button-container a:hover {
-  background-color: 61114f;
+.section.columns-container .columns-2-cols>div>div:last-child .button-container a:hover {
+  background-color: #61114f;
   color: #fff;
 }
+
