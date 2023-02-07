@@ -245,12 +245,12 @@ body {
   line-height: 1.4;
 }
 /* References section */
-section.references-container {
+.section.references-container {
   padding: 3.5rem 0;
 }
 
-section.references-container .references,
-section.references-container .references p {
+.section.references-container .references,
+.section.references-container .references p {
   font-size: 0.75em;
 }
 
