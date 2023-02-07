@@ -3,9 +3,8 @@ export default function decorate(block) {
   block.classList.add(`columns-${cols.length}-cols`);
   
   [...block.children].forEach((row, i) => {
-    const section = row.children[i];
-    if (section) {
-      section.classList.add(`col-content-${i}`);
+    if (row) {
+      row.classList.add(`col-content-${i}`);
     }
   });
 
