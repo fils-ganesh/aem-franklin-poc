@@ -1,0 +1,48 @@
+.section.hero-video-container .hero-video-wrapper {
+  background: url(https://scdsilentdamage.com/images/webformat/homeVideoBg.webp) no-repeat;
+  padding: 106px 15px;
+  background-size: cover;
+  background-color: #f6f6f6;
+}
+
+.section.hero-video-container .hero-video-wrapper .video-text {
+  width: 33.33%;
+  cursor: pointer;
+  padding: 20px 10px 20px 70px;
+  background: #fff;
+  margin-left: auto;
+  margin-right: 77px;
+  position: relative;
+}
+
+.section.hero-video-container .hero-video-wrapper .video-text:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 18px;
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-image: url(https://scdsilentdamage.com/images/webformat/homeVideoPlayButton.webp);
+  background-size: cover;
+  border: 2.5px solid #61114f;
+  border-radius: 3px;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+
+.section.hero-video-container .hero-video-wrapper .video-text:hover:before {
+  background-image: url(https://scdsilentdamage.com/images/webformat/homeVideoPlayButtonHover.webp);
+  background-color: #61114f;
+}
+
+.section.hero-video-container .hero-video-wrapper .video-text h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  color: #1f3142;
+  font-size: 1.875em;
+  line-height: 1.1;
+  margin: 0 0 0.5em;
+}
