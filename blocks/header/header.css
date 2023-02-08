@@ -2,11 +2,23 @@
 header .header.block {
   position: fixed;
   left: 0;
+  top: 0;
   background-color: var(--background-color);
   width: 100%;
+  box-shadow: 0 0 6px #9a9a9a;
+}
+
+header .header {
+  transition: transform 0.25s ease;
+}
+
+header.scrolled .header {
+  -webkit-transform: translateY(-32px);
+  transform: translateY(-32px);
 }
 
 header nav {
+  position: relative;
   display: grid;
   grid-template:
     'hamburger brand tools'var(--nav-height) 'sections sections sections'1fr / auto 1fr auto;
@@ -14,8 +26,7 @@ header nav {
   z-index: 1;
   max-width: 1170px;
   margin: 0 auto;
-  height: var(--nav-height);
-  padding: 0 15px;
+  padding: 40px 15px 10px;
   font-family: var(--body-font-family);
 }
 
@@ -128,6 +139,38 @@ header nav[aria-expanded=true] .nav-hamburger-icon::after {
   }
 }
 
+header .nav-top {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+header .nav-top a {
+  font-size: 12px;
+  color: #61114f;
+  font-weight: 700;
+  position: relative;
+  padding: 4px 15px 4px 0;
+  text-decoration: none;
+}
+
+header .nav-top a:after {
+  content: '';
+  position: absolute;
+  background: url(https://scdsilentdamage.com/images/headerNavRightArrowDarkRed.png) no-repeat center center;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%);
+  transition: right 0.25s ease;
+}
+
+header .nav-top a:hover:after {
+  right: -8px;
+}
+
 /* brand */
 header .nav-brand {
   grid-area: brand;
@@ -144,6 +187,12 @@ header .nav-brand a {
   background-size: contain;
   width: 220px;
   height: 56px;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+header.scrolled .nav-brand a {
+  height: 40px;
 }
 
 header nav .nav-brand img {
