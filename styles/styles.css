@@ -44,6 +44,10 @@
 
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: var(--body-font-size-m);
   margin: 0;
@@ -305,4 +309,3 @@ sup {
   top: -0.5em;
   font-size: 60%;
 }
-
