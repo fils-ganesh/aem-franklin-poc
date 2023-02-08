@@ -1,0 +1,27 @@
+.section.sign-up-container {
+  background-color: #E5D9D9;
+  padding: 40px 0 50px;
+}
+
+.section.sign-up-container .sign-up-wrapper {
+  text-align: center;
+}
+
+.section.sign-up-container .sign-up-wrapper h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  color: #1F3142;
+  font-size: 36px;
+  line-height: 1.1;
+  margin: 0 0 0.5em;
+}
+
+.section.sign-up-container .sign-up-wrapper .sign-up>div p:first-child {
+  margin: 0 0 10px;
+}
+
+.section.sign-up-container .sign-up-wrapper .sign-up>div img {
+  max-width: 72px;
+  display: block;
+  margin: a auto;
+}
