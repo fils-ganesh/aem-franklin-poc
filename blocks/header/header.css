@@ -1,37 +1,29 @@
 /* header and nav layout */
+header .header.block {
+  position: fixed;
+  left: 0;
+  background-color: var(--background-color);
+  width: 100%;
+}
+
 header nav {
-  box-sizing: border-box;
   display: grid;
   grid-template:
-    'hamburger brand tools' var(--nav-height)
-    'sections sections sections' 1fr / auto 1fr auto;
+    'hamburger brand tools'var(--nav-height) 'sections sections sections'1fr / auto 1fr auto;
   align-items: center;
-  gap: 0 2em;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
   z-index: 1;
-  width: 100%;
-  max-width: 1264px;
+  max-width: 1170px;
+  margin: 0 auto;
   height: var(--nav-height);
-  padding: 0 1rem;
-  background-color: var(--background-color);
+  padding: 0 15px;
   font-family: var(--body-font-family);
 }
 
 header nav[aria-expanded=true] {
   grid-template:
-    'hamburger brand' var(--nav-height)
-    'sections sections' 1fr
-    'tools tools' var(--nav-height) / auto 1fr;
+    'hamburger brand'var(--nav-height) 'sections sections'1fr 'tools tools'var(--nav-height) / auto 1fr;
   overflow-y: auto;
   min-height: 100vh;
-}
-
-@media (min-width: 600px) {
-  header nav {
-    padding: 0 2rem;
-  }
 }
 
 @media (min-width: 900px) {
@@ -145,6 +137,15 @@ header .nav-brand {
   line-height: 1;
 }
 
+header .nav-brand a {
+  background: url(https://scdsilentdamage.com/images/webformat/silent-damage-logo.webp) no-repeat;
+  text-indent: -9999px;
+  display: block;
+  background-size: contain;
+  width: 220px;
+  height: 56px;
+}
+
 header nav .nav-brand img {
   width: 128px;
   height: auto;
@@ -165,22 +166,22 @@ header nav[aria-expanded=true] .nav-sections {
   align-self: start;
 }
 
-header nav .nav-sections ul  {
+header nav .nav-sections ul {
   list-style: none;
   padding-left: 0;
   font-size: var(--body-font-size-s);
   font-weight: 500;
 }
 
-header nav .nav-sections ul > li {
+header nav .nav-sections ul>li {
   font-weight: 700;
 }
 
-header nav .nav-sections ul > li > ul {
+header nav .nav-sections ul>li>ul {
   margin-top: 0;
 }
 
-header nav .nav-sections ul > li > ul > li {
+header nav .nav-sections ul>li>ul>li {
   font-weight: 500;
 }
 
@@ -228,18 +229,29 @@ header nav .nav-sections ul > li > ul > li {
     font-size: var(--body-font-size-xs);
   }
 
-  header nav .nav-sections > ul > li {
+  header nav .nav-sections>ul>li {
     flex: 0 1 auto;
     position: relative;
     font-weight: 500;
   }
 
-  header nav .nav-sections > ul > li > ul {
+  header nav .nav-sections>ul>li a {
+    text-align: center;
+    font-size: 17.2125px;
+    line-height: 1.2;
+    color: #1F3142;
+    display: block;
+    white-space: normal;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  header nav .nav-sections>ul>li>ul {
     display: none;
     position: relative;
   }
 
-  header nav .nav-sections > ul > li[aria-expanded=true] > ul {
+  header nav .nav-sections>ul>li[aria-expanded=true]>ul {
     display: block;
     position: absolute;
     left: -1em;
@@ -250,7 +262,7 @@ header nav .nav-sections ul > li > ul > li {
     white-space: initial;
   }
 
-  header nav .nav-sections > ul > li > ul::before {
+  header nav .nav-sections>ul>li>ul::before {
     content: '';
     position: absolute;
     top: -8px;
@@ -258,11 +270,11 @@ header nav .nav-sections ul > li > ul > li {
     width: 0;
     height: 0;
     border-left: 8px solid transparent;
-    border-right: 8px solid transparent;    
+    border-right: 8px solid transparent;
     border-bottom: 8px solid var(--highlight-background-color);
   }
 
-  header nav .nav-sections > ul > li > ul > li {
+  header nav .nav-sections>ul>li>ul>li {
     padding: 8px 0;
   }
 }
