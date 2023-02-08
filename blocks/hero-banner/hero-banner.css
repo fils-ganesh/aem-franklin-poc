@@ -14,7 +14,7 @@
 }
 
 .section.hero-banner-container .hero-banner-wrapper .hero-banner .banner-left {
-  width: 38%;
+  width: 42%;
   padding-left: calc(50vw - 585px);
 }
 
@@ -32,7 +32,7 @@
 }
 
 .section.hero-banner-container .hero-banner-wrapper .hero-banner .banner-right {
-  width: 62%;
+  width: 58%;
   padding-left: 6%;
 }
 
