@@ -1,0 +1,41 @@
+.section.hero-banner-container {
+  padding: 0;
+  background: #fae3dd;
+}
+
+.section.hero-banner-container .hero-banner-wrapper {
+  max-width: none;
+  padding: 0;
+}
+
+.section.hero-banner-container .hero-banner-wrapper .hero-banner>div {
+  display: flex;
+  align-items: center;
+}
+
+.section.hero-banner-container .hero-banner-wrapper .hero-banner .banner-left {
+  width: 33.5%;
+  padding-left: calc(50vw - 585px);
+}
+
+.section.hero-banner-container .hero-banner-wrapper .hero-banner .banner-left h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  color: #1F3142;
+  font-size: 2.5em;
+  line-height: 1.1;
+  margin: 0 0 0.5em;
+}
+
+.section.hero-banner-container .hero-banner-wrapper .hero-banner .banner-left p {
+  padding-right: 4%;
+}
+
+.section.hero-banner-container .hero-banner-wrapper .hero-banner .banner-right {
+  width: 66.5%;
+  padding-left: 6%;
+}
+
+.section.hero-banner-container .hero-banner-wrapper .hero-banner .banner-right picture img {
+  display: block;
+}
