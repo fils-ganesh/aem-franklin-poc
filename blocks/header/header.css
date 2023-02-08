@@ -6,6 +6,7 @@ header .header.block {
   background-color: var(--background-color);
   width: 100%;
   box-shadow: 0 0 6px #9a9a9a;
+  z-index: 5;
 }
 
 header .header {
