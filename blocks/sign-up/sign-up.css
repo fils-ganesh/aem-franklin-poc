@@ -23,5 +23,5 @@
 .section.sign-up-container .sign-up-wrapper .sign-up>div img {
   max-width: 72px;
   display: block;
-  margin: a auto;
+  margin: 0 auto;
 }
