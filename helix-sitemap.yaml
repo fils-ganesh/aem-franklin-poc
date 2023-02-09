@@ -1,5 +1,5 @@
 sitemaps:
   example:
-    origin: https://www.example.com
+    origin: https://main--aem-franklin-poc--fils-ganesh.hlx.page/
     source: /query-index.json
-    destination: /sitemap-en.xml
+    destination: /sitemap.xml
