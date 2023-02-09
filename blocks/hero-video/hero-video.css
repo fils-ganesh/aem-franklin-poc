@@ -1,3 +1,6 @@
+.section.hero-video-container {
+  margin-top: 0;
+}
 .section.hero-video-container .hero-video-wrapper {
   background: url(https://scdsilentdamage.com/images/webformat/homeVideoBg.webp) no-repeat;
   padding: 106px 15px;
