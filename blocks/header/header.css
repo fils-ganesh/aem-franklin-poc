@@ -291,7 +291,6 @@ header nav .nav-sections ul>li>ul>li {
     left: 50%;
     transform: translateX(-50%);
     padding: 12px 0;
-    background-color: rgba(97, 17, 79, 0.9);
     margin: 18px 0 0;
   }
 
@@ -316,7 +315,7 @@ header nav .nav-sections ul>li>ul>li {
     position: absolute;
     width: 200vw;
     top: 0;
-    background: rgba(97, 17, 79, 1);
+    background: rgba(97, 17, 79, .9);
     height: 100%;
     z-index: -1;
   }
