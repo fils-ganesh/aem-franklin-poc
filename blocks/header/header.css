@@ -251,6 +251,30 @@ header nav .nav-sections ul>li>ul>li {
   header nav .nav-sections .nav-drop {
     padding-right: 16px;
     cursor: pointer;
+    position: relative;
+  }
+
+  header nav .nav-sections .nav-drop:after {
+    content: '';
+    position: absolute;
+    bottom: -19px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(97, 17, 79, 0.9);
+    margin-left: -11px;
+    display: none;
+  }
+
+  header nav .nav-sections .nav-drop.current-page ul,
+  header nav .nav-sections .nav-drop.current-page:after {
+    display: flex;
+  }
+
+  header.scrolled nav .nav-sections .nav-drop:after {
+    bottom: -11px;
   }
 
   header nav .nav-sections ul {
@@ -285,7 +309,7 @@ header nav .nav-sections ul>li>ul>li {
 
 
   header nav .nav-sections>ul>li>ul {
-    display: flex;
+    display: none;
     justify-content: center;
     position: absolute;
     left: 50%;
@@ -296,18 +320,6 @@ header nav .nav-sections ul>li>ul>li {
 
   header.scrolled nav .nav-sections>ul>li>ul {
     margin: 10px 0 0;
-  }
-
-  header nav .nav-sections>ul>li>ul:before {
-    content: '';
-    position: absolute;
-    top: -9px;
-    left: 41%;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid rgba(97, 17, 79, 0.9);
   }
 
   header nav .nav-sections>ul>li>ul:after {
