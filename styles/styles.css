@@ -15,7 +15,7 @@
  :root {
   /* colors */
   --link-color: #035fe6;
-  --link-hover-color: #136ff6;
+  --link-hover-color: #61114f;
   --background-color: #fff;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
@@ -60,12 +60,12 @@ body.appear {
 
 h1, h2, h3,
 h4, h5, h6 {
-  font-family: var(--heading-font-family);
-  font-weight: 600;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
   scroll-margin: calc(var(--nav-height) + 1em);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
 }
 
 h1 { font-size: var(--heading-font-size-xxl) }
@@ -106,28 +106,27 @@ pre {
 /* buttons */
 
 a.button:any-link, button {
-  font-family: var(--body-font-family);
+  margin: 0;
   display: inline-block;
-  box-sizing: border-box;
-  text-decoration: none;
-  border: 2px solid transparent;
-  padding: 5px 30px;
+  border: 3px solid #61114f;
+  border-radius: 0.3rem;
+  background-color: transparent;
+  color: #61114f;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1;
+  padding: 12.5px 35px;
   text-align: center;
-  font-style: normal; 
-  font-weight: 600;
-  cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
-  margin: 16px 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border-radius: 30px;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+  text-decoration: none;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
   background-color: var(--link-hover-color);
   cursor: pointer;
+  color: #fff;
 }
 
 button:disabled, button:disabled:hover {
@@ -161,8 +160,7 @@ main input:hover {
 }
 
 main .section {
-  padding: 0;
-  margin: 90px 0 60px;
+  padding: 64px 16px;
 }
 
 main pre {
@@ -203,6 +201,12 @@ main img {
   height: auto;
 }
 
+@media (min-width: 600px) {
+  main .section {
+    padding: 64px 32px;
+  }  
+}
+
 @media (min-width: 900px) {
   :root {
     --heading-font-size-xxl: 60px;
@@ -237,8 +241,7 @@ body {
 }
 /* References section */
 .section.references-container {
-  padding: 35px 0;
-  margin: 0;
+  padding: 3.5rem 0;
 }
 
 .section.references-container .references,
@@ -304,5 +307,4 @@ sup {
 
 div.section:empty {
   padding: 0;
-  margin: 0;
 }
