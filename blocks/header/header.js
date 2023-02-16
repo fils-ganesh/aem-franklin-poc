@@ -153,6 +153,12 @@ export default async function decorate(block) {
     }
   }
 
-  window.addEventListener('scroll', onScroll)
+  window.addEventListener('scroll', onScroll);
+
+  let getLocationHref = window.location.pathname;
+  document.querySelectorAll('.nav-drop').forEach((navSection) => {
+    var getHref = navSection.querySelector('a').getAttribute('href');
+    if(getHref == getLocationHref) navSection.classList.add('current-page');
+  });
 
 }
