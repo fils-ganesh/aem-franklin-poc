@@ -1,0 +1,52 @@
+.section.sickle-resources-container {
+  background: #F6F3F3;
+}
+
+.section.sickle-resources-container .default-content-wrapper h2 {
+  font-size: 42.5px;
+  margin: 0 0 60px;
+  text-align: center;
+}
+
+.section.sickle-resources-container .sickle-resources-wrapper .row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #9a9a9a;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.section.sickle-resources-container .sickle-resources-wrapper .row .col-left {
+  width: 66.66%;
+  padding: 0 15px 0 120px;
+  position: relative;
+}
+
+.section.sickle-resources-container .sickle-resources-wrapper .row .col-left>p:first-child {
+  margin: 0;
+}
+
+.section.sickle-resources-container .sickle-resources-wrapper .row .col-left picture img {
+  max-width: 84px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section.sickle-resources-container .sickle-resources-wrapper .row .col-left h4 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.section.sickle-resources-container .sickle-resources-wrapper .row .col-left p {
+  margin: 0 0 15px;
+}
+
+.section.sickle-resources-container .sickle-resources-wrapper .row .col-right {
+  width: 33.33%;
+  padding: 0 15px;
+}
+
+.section.sickle-resources-container .sickle-resources-wrapper .row .col-right .button {
+  width: 100%;
+}
