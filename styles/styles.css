@@ -308,3 +308,84 @@ sup {
 div.section:empty {
   padding: 0;
 }
+
+/* Sickle cell resources */
+.interior-hero-banner-container+.columns-container {
+  text-align: center;
+}
+
+.interior-hero-banner-container+.columns-container .default-content-wrapper h2 {
+  font-size: 42.5px;
+}
+
+.interior-hero-banner-container+.columns-container .columns-wrapper:nth-of-type(2) .columns-3-cols>div>div {
+  width: 33.33%;
+  margin: 0;
+  padding: 0 15px;
+}
+
+.interior-hero-banner-container+.columns-container .columns-wrapper:nth-of-type(2) .columns-3-cols>div>div h2 {
+  font-size: 70px;
+  color: #E97358;
+  margin: 0;
+}
+
+.interior-hero-banner-container+.columns-container .columns-wrapper:nth-of-type(2) .columns-3-cols>div>div h4 {
+  color: #E97358;
+  font-size: 29.75px;
+}
+
+.interior-hero-banner-container+.columns-container .columns-wrapper:nth-of-type(2) .columns-3-cols>div>div img {
+  max-width: 100%;
+  width: auto;
+}
+
+.interior-hero-banner-container+.columns-container .columns-wrapper:nth-of-type(2) .columns-3-cols>div>div:nth-of-type(2) {
+  box-shadow: 0 0 0.75rem #9a9a9a;
+  border-radius: 0.25rem;
+  margin: 3rem;
+  max-width: 300px;
+  padding: 15px 15px 10px;
+  position: relative;
+}
+
+.interior-hero-banner-container+.columns-container .columns-wrapper:nth-of-type(2) .columns-3-cols>div>div:nth-of-type(2):after {
+  content: "";
+  width: 80px;
+  height: 28px;
+  background: url(https://scdsilentdamage.com/images/webformat/downward-arrow.webp) no-repeat center center;
+  position: absolute;
+  background-size: contain;
+  bottom: -60px;
+  left: 50%;
+  margin-left: -40px;
+}
+
+.interior-hero-banner-container+.columns-container .columns-wrapper:nth-of-type(2) .columns-3-cols>div>div:nth-of-type(2) img {
+  max-width: 120px;
+}
+
+.interior-hero-banner-container+.columns-container .columns-wrapper:last-child .columns-3-cols>div>div {
+  width: 33.33%;
+  margin: 0;
+  padding: 2rem 15px;
+}
+
+.interior-hero-banner-container+.columns-container .columns-wrapper:last-child .columns-3-cols>div>div p {
+  margin: 0;
+  line-height: normal;
+}
+
+.interior-hero-banner-container+.columns-container .columns-wrapper:last-child .columns-3-cols>div>div p:first-child {
+  font-size: 3.125em;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  color: #E97358;
+}
+
+.interior-hero-banner-container+.columns-container .columns-wrapper:last-child .columns-3-cols>div>div p:last-child {
+  font-size: 1.5em;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+}
+
