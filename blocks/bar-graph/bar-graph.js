@@ -38,10 +38,8 @@ export default function decorate(block) {
 }
 
 function generateBarGraph(wrapper) {
-  var values = [];
   document.querySelectorAll(wrapper + ' .bar').forEach(function(element) {
     let percent = parseInt(element.innerText) * 2.45;
-    percent = Math.ceil((percent * 100) / 100);
     element.style.width = percent + '%';
     element.classList.add('in');
   });
